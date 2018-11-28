@@ -14,7 +14,6 @@ branches:
 
 cache:
   directories:
-    - vendor
     - $HOME/.composer/cache
 
 env:
@@ -25,7 +24,7 @@ env:
 matrix:
   include:
     - php: 7.2
-      env: WP_VERSION=nightly
+      env: WP_VERSION=latest
     - php: 7.1
       env: WP_VERSION=latest
     - php: 7.0
@@ -48,6 +47,9 @@ before_install:
     else
       echo "xdebug.ini does not exist"
     fi
+  - |
+    # Raise PHP memory limit to 2048MB
+    echo 'memory_limit = 2048M' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
 
 install:
   - composer require wp-cli/wp-cli:dev-master

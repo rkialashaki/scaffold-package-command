@@ -1,7 +1,7 @@
 wp-cli/scaffold-package-command
 ===============================
 
-Scaffold WP-CLI commands with functional tests
+Scaffolds WP-CLI commands with functional tests, full README.md, and more.
 
 [![Build Status](https://travis-ci.org/wp-cli/scaffold-package-command.svg?branch=master)](https://travis-ci.org/wp-cli/scaffold-package-command) [![CircleCI](https://circleci.com/gh/wp-cli/scaffold-package-command/tree/master.svg?style=svg)](https://circleci.com/gh/wp-cli/scaffold-package-command/tree/master)
 
@@ -258,6 +258,7 @@ files include:
 
 * `.github/ISSUE_TEMPLATE` - Text displayed when a user opens a new issue.
 * `.github/PULL_REQUEST_TEMPLATE` - Text displayed when a user submits a pull request.
+* `.github/settings.yml` - Configuration file for the [Probot settings app](https://probot.github.io/apps/settings/).
 
 **OPTIONS**
 
@@ -299,7 +300,7 @@ Once you've decided to commit the time to seeing your pull request through, [ple
 
 ## Support
 
-Github issues aren't for general support questions, but there are other venues you can try: http://wp-cli.org/#support
+Github issues aren't for general support questions, but there are other venues you can try: https://wp-cli.org/#support
 
 
 *This README.md is generated dynamically from the project's codebase using `wp scaffold package-readme` ([doc](https://github.com/wp-cli/scaffold-package-command#wp-scaffold-package-readme)). To suggest changes, please submit a pull request against the corresponding part of the codebase.*
